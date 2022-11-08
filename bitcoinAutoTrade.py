@@ -55,7 +55,7 @@ while True:
             btc = get_balance("BTC")
 
             #내가 가지고있는 거래 금액이 최소 0.00008이상 한 이정도가 5천원 정도 함 그럼 거래를 하는 것이다 9시 되기 10초전부터
-            if btc > 0.00008:
+            if btc > 0.00001:
                 upbit.sell_market_order("KRW-BTC", btc*0.9995)
         time.sleep(1)
     except Exception as e:
